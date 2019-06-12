@@ -76,7 +76,8 @@ let gameSetup = {
                 divContainer.append('<div class="form-check"><input class="form-check-input" type="radio" name="radio-group' + i + '" id="radio' + i + '"><label class="form-check-label" id="radio' + i + 'label" for="radio' + i + '">' + answer6 + '</label></div>');
             }
             //Create a button to click when questions are done
-            let doneButton = '<button class="btn btn-outline-info" id="done-button" type="submit">Done</button>';
+            let doneButton = $(".btn").button("submit").addClass("btn-outline-info")
+            //('<button class="btn btn-outline-info" id="done-button" type="submit">Done</button>');
             divContainer.append(doneButton);
             $("#done-button").on("click", gameSetup.stopTimer);
             },
