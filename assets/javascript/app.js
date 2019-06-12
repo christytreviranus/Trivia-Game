@@ -57,8 +57,9 @@ let gameSetup = {
             let divContainer = $("#questions-box");
             let answerGroup = $(".form-check");
             divContainer.append("<h2>Here's Your Questions! Go!</h2>");
-
+            
             for (i = 0; questionStore.length; i++) {
+                
                 divContainer.append('<div id="question">' + questionStore[i].question + '</div>');
 
                 let answer1 = questionStore[i].answers[0];
@@ -74,11 +75,11 @@ let gameSetup = {
                 divContainer.append('<div class="form-check"><input class="form-check-input" type="radio" name="radio-group' + i + '" id="radio' + i + '"><label class="form-check-label" id="radio' + i + 'label" for="radio' + i + '">' + answer4 + '</label></div>');
                 divContainer.append('<div class="form-check"><input class="form-check-input" type="radio" name="radio-group' + i + '" id="radio' + i + '"><label class="form-check-label" id="radio' + i + 'label" for="radio' + i + '">' + answer5 + '</label></div>');
                 divContainer.append('<div class="form-check"><input class="form-check-input" type="radio" name="radio-group' + i + '" id="radio' + i + '"><label class="form-check-label" id="radio' + i + 'label" for="radio' + i + '">' + answer6 + '</label></div>');
-            
             }
+
             //Create a button to click when questions are done
-            let doneButton = $('<button class="btn btn-outline-info" id="done-button" type="submit"></button>');
-            divContainer.append(doneButton);
+            //let doneButton = ("<button class='btn btn-outline-info' id='done-button' type='submit'></button>");
+            divContainer.append("<button class='btn btn-outline-info' id='done-button' type='submit'>Done</button>");
             $("#done-button").on("click", gameSetup.stopTimer);
             },
 
