@@ -39,6 +39,7 @@ body {
   footer {
     height: 30px;
     margin-top: 30px;
+    text-align: center;
   }
   
   #copyright-small {
