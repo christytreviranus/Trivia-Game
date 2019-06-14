@@ -58,7 +58,7 @@ let gameSetup = {
             let answerGroup = $(".form-check");
             divContainer.append("<h2>Here's Your Questions! Go!</h2>");
             
-            for (i = 0; questionStore.length; i++) {
+            for (let i = 0; i  < questionStore.length; i++) {
                 
                 divContainer.append('<div id="question">' + questionStore[i].question + '</div>');
 
@@ -78,7 +78,7 @@ let gameSetup = {
             }
 
             //Create a button to click when questions are done
-            //let doneButton = ("<button class='btn btn-outline-info' id='done-button' type='submit'></button>");
+
             divContainer.append("<button class='btn btn-outline-info' id='done-button' type='submit'>Done</button>");
             $("#done-button").on("click", gameSetup.stopTimer);
             },
