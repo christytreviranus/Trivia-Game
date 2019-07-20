@@ -19,3 +19,6 @@
 - JavaScript 
 - jQuery 
 
+## Demo
+
+<a href="https://christytreviranus.github.io/Trivia-Game/">View the finished product here.</a>
