@@ -12,10 +12,6 @@
 
 * Don't forget to include a countdown timer.
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 820a8bd2ce302cf7e654f20a1158af3c096e10b2
 ## Technologies Used
 - HTML
 - CSS 
@@ -23,13 +19,6 @@
 - JavaScript 
 - jQuery 
 
-<<<<<<< HEAD
-
 ## Demo
 
 <a href="https://christytreviranus.github.io/Trivia-Game/">View the finished product here.</a>
-=======
-## Demo
-
-<a href="https://christytreviranus.github.io/Trivia-Game/">View the finished product here.</a>
->>>>>>> 820a8bd2ce302cf7e654f20a1158af3c096e10b2
